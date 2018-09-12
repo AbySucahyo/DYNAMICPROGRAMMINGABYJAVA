@@ -5,6 +5,8 @@
  */
 package Latihan;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Aby
@@ -14,6 +16,7 @@ public class HitungFibonacci {
         String identitas = "Aby Sucahyo / XRPL5 / 01";
         
         tampilJudul(identitas);
+        int n = tampilInput();
     }
     private static void tampilJudul(String identitas){
         System.out.println("Identitas : "+ identitas);
@@ -21,4 +24,13 @@ public class HitungFibonacci {
         System.out.println("\nHitung Fibonacci");
         System.out.println("1, 1, 2, 3, 5, 8, 13, 21, ... dst.\n");
     }
+    private static int tampilInput(){
+        Scanner baca = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-1 ");
+        int n = baca.nextInt();
+        
+        return n;
+    }
+    
 }
