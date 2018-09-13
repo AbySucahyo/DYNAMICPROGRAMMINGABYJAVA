@@ -30,7 +30,7 @@ public class HitungFibonacci {
     private static int tampilInput(){
         Scanner baca = new Scanner(System.in);
         
-        System.out.print("Bilangan ke-1 ");
+        System.out.print("Bilangan ke-:");
         int n = baca.nextInt();
         
         return n;
